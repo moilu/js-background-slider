@@ -11,7 +11,6 @@ body {
     background-position: center center;
     display: flex;
         align-items: center;    
-        flex-direction: column;
         justify-content: center;
     font-family: 'Roboto', 'sans-serif';
     height: 100vh;
@@ -36,7 +35,7 @@ body::before {
     height: 70vh;
     overflow: hidden;
     position: relative;
-    width: 70vw;
+    width: 70vh;
 }
 
 .slide {
@@ -58,7 +57,7 @@ body::before {
 
 .arrow {
     background-color: transparent;
-    border: 0.2rem solid orange;
+    border: none;
     color: #fff;
     cursor: pointer;
     font-size: 3rem;
@@ -66,6 +65,7 @@ body::before {
     position: fixed;
         top: 50%;
     transform: translateY(-50%);
+    z-index: 1;
 }
 
 .arrow:focus {
